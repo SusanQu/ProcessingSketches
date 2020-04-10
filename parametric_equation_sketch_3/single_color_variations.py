@@ -80,6 +80,13 @@ def x1(t):
 def y1(t):
     return cos(t/10) * 200
 
+##################################
+# colour arrangment
+# background(51, 85, 139) cobalt blue
+# stroke(241, 128, 59) warm orange
+
+# background(92, 112, 105) #sap green
+# stroke(241, 158, 98) #faint warm orange
 ############################################################
 # 6. cone shape with horizontal line
 #this one looks more stable when lines are increased to 100
@@ -134,13 +141,13 @@ def y1(t):
 #with more line range(100)
 ############################################################
 def x(t):
-    return sin(t/10) * 100
+    return sin(-t/10) * 100
 
 def y(t):
     return cos(t/10) + sin(t/10)*100 + cos(t/10) * 100
 
 def x1(t):
-    return sin(t/10) * 200 + sin(t)*2 + sin(t)
+    return sin(-t/10) * 200 + sin(-t)*2 + sin(t)
 
 def y1(t):
     return cos(t/20) * 200
