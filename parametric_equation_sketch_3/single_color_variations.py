@@ -141,18 +141,21 @@ def y1(t):
 #with more line range(100)
 ############################################################
 def x(t):
-    return sin(-t/10) * 100
+    return sin(t/10) * 100
 
 def y(t):
     return cos(t/10) + sin(t/10)*100 + cos(t/10) * 100
 
 def x1(t):
-    return sin(-t/10) * 200 + sin(-t)*2 + sin(t)
+    return sin(t/10) * 200 + sin(t)*2 + sin(t)
 
 def y1(t):
     return cos(t/20) * 200
 
-
+##################################
+# colour arrangment
+# background(116, 138, 161) #gray blue
+# stroke(235, 161, 142)#light pink
 ############################################################
 # 10. cork screw with diagonal line
 #with more line range(100)
