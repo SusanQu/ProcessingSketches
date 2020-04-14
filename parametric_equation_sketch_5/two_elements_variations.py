@@ -21,8 +21,12 @@ def draw():
         strokeWeight(2)
         line(x(t + i), y(t + i), x1(t + i), y1(t + i))
 
+    for i in range(50):
+        stroke(153, 153, 153)
+        strokeWeight(5)
+        point(x3(t + i), y3(t + i))
 
-    t = t + 0.135
+    t = t + 0.13
 
 
 def mousePressed():
@@ -32,13 +36,22 @@ def pauseFrame():
     delay(DELAY)
 
 def x(t):
-    return sin(t/10) * 80
+    return sin(t / 10) * 80
 
 def y(t):
-    return cos(t/10) + sin(t/10)*80 + cos(t/10) * 100 + sin(t/10)*250
+    return cos(t / 10) + sin(t / 10) * 80 + cos(t / 10) * 100 + sin(t / 10) * 250
 
 def x1(t):
-    return sin(t/10) * 200 + sin(t)*2 + sin(t)
+    return sin(t / 10) * 200 + sin(t) * 2 + sin(t)
 
 def y1(t):
-    return cos(t/20) * 200
+    return cos(t / 20) * 200
+
+
+
+
+def x3(t):
+    return sin(-t / 10) * 250
+
+def y3(t):
+    return cos(t / 20) * 160

@@ -1,5 +1,5 @@
 #########################################
-# Line and Dots
+# Circle - blowing bubbles
 #########################################
 
 t = 0
@@ -16,13 +16,13 @@ def draw():
 
     translate(width / 2, height / 2)
 
-    for i in range(100):
+    for i in range(60):
         stroke(153, 153, 153)
+        noFill()
         strokeWeight(2)
-        line(x(t + i), y(t + i), x1(t + i), y1(t + i))
+        circle(x(t + i), y(t + i), x1(t + i))
 
-
-    t = t + 0.135
+    t = t + 0.1
 
 
 def mousePressed():
@@ -32,13 +32,10 @@ def pauseFrame():
     delay(DELAY)
 
 def x(t):
-    return sin(t/10) * 80
+    return cos(t / 10) * 100
 
 def y(t):
-    return cos(t/10) + sin(t/10)*80 + cos(t/10) * 100 + sin(t/10)*250
+    return sin(-t / 10) * 100
 
 def x1(t):
-    return sin(t/10) * 200 + sin(t)*2 + sin(t)
-
-def y1(t):
-    return cos(t/20) * 200
+    return cos(t /10) * 100 - cos(t /50) * 100
