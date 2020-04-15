@@ -1,5 +1,5 @@
 #########################################
-# Circle
+# Circle - body
 #########################################
 
 t = 0
@@ -16,25 +16,19 @@ def draw():
 
     translate(width / 2, height / 2)
 
-    for i in range(40):
-        stroke(153, 153, 153)
-        noFill()
-        strokeWeight(2)
-        circle(x(t + i), y(t + i), x1(t + i))
-    
     for i in range(30):
         stroke(153, 153, 153)
         noFill()
         strokeWeight(2)
-        circle(xx(t - i), yy(t - i), xx1(t - i))
-        
-    for i in range(30):
-        stroke(153, 153, 153)
-        noFill()
-        strokeWeight(2)
-        circle(xxx(t - i), yyy(t - i), xxx1(t - i))
+        circle(x(t - i), y(t - i), x1(t + i))
 
-    t = t + 0.15
+    for i in range(30):
+        stroke(153, 153, 153)
+        noFill()
+        strokeWeight(2)
+        circle(xx(t - i), yy(t - i), xx1(t + i))
+
+    t = t + 0.1
 
 
 def mousePressed():
@@ -57,17 +51,7 @@ def xx(t):
     return cos(t / 10) * 150
 
 def yy(t):
-    return sin(-t / 20) + cos(t/10) * (-55)
+    return sin(-t / 20) + cos(t/10) * (-75)
 
 def xx1(t):
-    return cos(t /10) * 200
-
-
-def xxx(t):
-    return cos(t / 10) * 50
-
-def yyy(t):
-    return sin(-t / 20) + cos(t/10) * (200)
-
-def xxx1(t):
-    return cos(t /10) * 200
+    return cos(t /10) * 150

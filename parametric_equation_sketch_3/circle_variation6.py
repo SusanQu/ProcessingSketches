@@ -1,5 +1,5 @@
 #########################################
-# Circle
+# Circle - bloom
 #########################################
 
 t = 0
@@ -21,13 +21,13 @@ def draw():
         noFill()
         strokeWeight(2)
         circle(x(t + i), y(t + i), x1(t + i))
-    
+
     for i in range(30):
         stroke(153, 153, 153)
         noFill()
         strokeWeight(2)
         circle(xx(t - i), yy(t - i), xx1(t - i))
-        
+
     for i in range(30):
         stroke(153, 153, 153)
         noFill()
