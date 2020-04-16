@@ -1,5 +1,5 @@
 #########################################
-# Lines symmetrical vertical movements 
+# Lines symmetrical vertical movements
 #########################################
 
 t = 0
@@ -15,6 +15,7 @@ def draw():
     global t
 
     translate(width / 2, height / 2)
+    scale(0.75)
 
     for i in range(50):
         stroke(153, 153, 153)

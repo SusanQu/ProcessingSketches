@@ -6,24 +6,27 @@ t = 0
 DELAY = 5 * 100
 
 def setup():
-    background(242, 242, 242)
+    background(31, 65, 59) #green
     size(800, 800)
 
 def draw():
+    background(31, 65, 59) #green
+    #background(31, 65, 88) #blue
 
-    background(242, 242, 242)
     global t
 
     translate(width / 2, height / 2)
+    scale(0.75)
 
     for i in range(100):
-        stroke(153, 153, 153)
+        stroke(192, 155, 146)
+        #stroke(243, 182, 162) #brighter pink
         strokeWeight(2)
         line(x(t + i), y(t + i), x1(t + i), y1(t + i))
 
     for i in range(50):
-        stroke(153, 153, 153)
-        strokeWeight(5)
+        stroke(255, 186, 69)
+        strokeWeight(7)
         point(x3(t + i), y3(t + i))
 
     t = t + 0.13
