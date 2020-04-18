@@ -39,11 +39,9 @@ def draw():
         point(x3(t + i), y3(t + i))
 
     if (recording == True):
-        saveFrame('movie_frames/lineDots_FrameOutput/lineDots_####.png')
+        saveFrame('movie_frames/lineDots_MultiFrame/lineDots_####.png')
 
-    
-    t = t + 0.135
-    #t = t + 0.5
+    t = t + 0.1325
 
 def mousePressed():
     pauseFrame()
