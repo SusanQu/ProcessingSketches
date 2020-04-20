@@ -1,5 +1,6 @@
 #########################################
 # Bezier
+# Try more lines
 #########################################
 
 t = 0
@@ -16,7 +17,8 @@ def draw():
 
     translate(width / 2, height / 2)
 
-    for i in range(50):
+    for i in range(63):
+    #for i in range(50):
         stroke(153, 153, 153)
         noFill()
         strokeWeight(2)

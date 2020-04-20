@@ -12,7 +12,7 @@ def setup():
 
 def keyPressed():
     global recording
-    
+
     if (key == 'r' or key == 'R'):
         recording = not recording
         print('recording: ' + str(bool(recording)))
@@ -21,7 +21,7 @@ def keyPressed():
 def draw():
     background(31, 65, 59)
     #background(31, 65, 88) #blue
-    
+
     global t
 
     translate(width / 2, height / 2)
