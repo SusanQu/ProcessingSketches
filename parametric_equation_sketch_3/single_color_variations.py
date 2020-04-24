@@ -236,3 +236,70 @@ def x1(t):
 
 def y1(t):
     return cos(t/20) * 140
+
+############################################################
+# 15. Letter O shape
+#with less line range(50)
+############################################################
+def x2(t):
+    return sin(t/10) * 100
+
+def y2(t):
+    return cos(t/10) * 100
+
+def x3(t):
+    return sin(t/10) * 200
+
+def y3(t):
+    return cos(t/10) * 100
+
+############################################################
+# 16. Folding square ribbon
+#with less line range(50)
+############################################################
+
+def x2(t):
+    return sin(t/10) * 150
+
+def y2(t):
+    return cos(t/10) * 200
+
+def x3(t):
+    return sin(t/10) * 200
+
+def y3(t):
+    return cos(t/10) * 100
+
+############################################################
+# 17. Letter O from above
+#with less line range(50)
+############################################################
+
+def x2(t):
+    return sin(t/10) * 150 + sin(t/10) *250
+
+def y2(t):
+    return cos(t/10) * 200
+
+def x3(t):
+    return sin(t/10) * 200
+
+def y3(t):
+    return cos(t/10) * 100
+
+############################################################
+# 17. Baseball cap tongue shape
+#with less line range(50)
+############################################################
+
+def x2(t):
+    return sin(t/10) * 150
+
+def y2(t):
+    return cos(t/10) * 200 + sin(t/10) *250
+
+def x3(t):
+    return sin(t/10) * 200
+
+def y3(t):
+    return cos(t/10) * 100
