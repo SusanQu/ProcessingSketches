@@ -17,8 +17,9 @@ def draw():
     translate(width / 2, height / 2)
 
     for i in range(10):
-        stroke(153, 153, 153)
-        noFill()
+        stroke(51, 51, 51, i*20)
+        #noFill()
+        fill(51, 51, 51, i*3)
         strokeWeight(2)
         circle(x(t + i), y(t + i), x1(t + i))
 
@@ -38,4 +39,4 @@ def y(t):
     return sin(t / 10)
 
 def x1(t):
-    return cos(t /10) * 200
+    return cos(t /10) * 250
