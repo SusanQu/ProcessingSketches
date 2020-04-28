@@ -4,9 +4,7 @@
 
 t = 0
 DELAY = 5 * 100
-r = 222
-g = 0
-b = 0
+
 
 def setup():
     background(242, 242, 242)
