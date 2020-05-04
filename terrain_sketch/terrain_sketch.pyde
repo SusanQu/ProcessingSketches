@@ -3,6 +3,7 @@
 #########################################
 
 scl = 20
+moving = float(0)
 
 def setup():
     size(800, 800, P3D)
@@ -12,7 +13,6 @@ def setup():
     global cols 
     global rows
     global terrain
-    global moving
     
     w = 1400
     h = 1200
@@ -21,15 +21,20 @@ def setup():
      
     terrain = [[0]*cols for i in range(cols+1)]
 
-    yoff = float(0)
+    
+
+def draw():
+    global moving
+    
+    moving = moving - 0.01
+    
+    yoff = moving
     for y in range(rows):
         xoff = float(0)
         for x in range(cols):
-            terrain[x][y] = map(noise(xoff, yoff), 0, 1, -50, 50)
-            xoff = xoff + 0.1
-        yoff = yoff + 0.1
-
-def draw():
+            terrain[x][y] = map(noise(xoff, yoff), 0, 1, -100, 100)
+            xoff = xoff + 0.2
+        yoff = yoff + 0.2
 
     background(28)
     stroke(255)
