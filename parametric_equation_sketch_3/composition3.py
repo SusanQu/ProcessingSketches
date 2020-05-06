@@ -1,5 +1,5 @@
 #########################################
-# Compostion 2
+# Compostion 3 - bigger lake
 #########################################
 
 t = 0
@@ -56,7 +56,7 @@ def draw():
     noStroke()
     arc(590, 400, 330, 350, PI, TWO_PI)
     '''
-    obj(550, 430)
+    obj(530, 450)
     obj1(130, -150)
     cloud()
 
@@ -67,7 +67,6 @@ def draw():
 
 def mousePressed():
     pauseFrame()
-    saveFrame('movie_frames/SingleFrame/composition_####.png')
 
 def pauseFrame():
     delay(DELAY)
@@ -81,7 +80,7 @@ def obj(transX, transY):
         stroke(242, 242, 242, i*10)
         fill(242, 242, 242)
         strokeWeight(2)
-        ellipse(xx(t + i), yy(t + i), xx1(t + i, 400), yy1(t + i))
+        ellipse(xx(t + i), yy(t + i), xx1(t + i, 600), yy1(t + i))
 
 def obj1(transX, transY):
     translate(transX, transY)
@@ -105,10 +104,10 @@ def cloud():
 
 
 def xx(t):
-    return cos(t / 10) + sin(-t/10) * 125
+    return cos(t / 10) + sin(-t/10) * 150
 
 def yy(t):
-    return sin(t / 10) + sin(t/10) * 50
+    return sin(t / 10) + sin(t/10) * 60
 
 def xx1(t, w):
     return cos(t /10) * w
