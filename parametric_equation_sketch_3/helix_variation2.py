@@ -1,5 +1,5 @@
 #########################################
-# Line variation 8 - Helio 3
+# helix - 2
 #########################################
 
 scl = 30
@@ -53,7 +53,8 @@ def draw():
             #fill(173, 237, 224)
             noFill()
 
-            vertex(a*scl, b, yy(scl * a + t))
+            vertex(a*scl, b, x1(scl * a + t))
+            #vertex(x * scl, x1((y + 10) * scl), y1(scl * x + t))
         endShape()
 
     t = t + 0.07

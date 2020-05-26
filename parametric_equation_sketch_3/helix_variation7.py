@@ -1,5 +1,5 @@
 #########################################
-# Line variation 7 - Helio2
+# helix_variation7
 #########################################
 
 scl = 30
@@ -66,7 +66,7 @@ def yy(t):
     return sin(-t / 10) * 300
 
 def x1(t):
-    return sin(t/-5) * 100
+    return sin(t/-5) * -200
 
 def y1(t):
     return cos(-t / 10) * 100 + sin(t / 20) * 100
