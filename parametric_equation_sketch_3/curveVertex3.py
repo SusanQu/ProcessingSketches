@@ -23,7 +23,8 @@ def setup():
 def draw():
     global t
 
-    background(47, 86, 76)
+    #background(47, 86, 76)
+    background(56, 57, 93)
 
     translate(width / 2, height / 2)
 
@@ -32,7 +33,8 @@ def draw():
     for y in range(rows / 3):
         beginShape()
         for x in range(cols/2 ):
-            stroke(209, 185, 151, y * 5)
+            #stroke(209, 185, 151, y * 5)
+            stroke(238, 170, 124, y * 5)
             strokeWeight(1)
             #fill(248, 248, 248)
             noFill()
@@ -61,7 +63,7 @@ def y1(t):
 
 def mousePressed():
     pauseFrame()
-    # saveFrame('movie_frames/lineDots_SingleFrame/points_####.png')
+    # saveFrame('movie_frames/curveVertex_SingleFrame/curve_####.png')
 
 def pauseFrame():
     delay(DELAY)
